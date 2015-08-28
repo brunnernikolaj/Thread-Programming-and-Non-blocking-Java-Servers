@@ -39,7 +39,7 @@ public class Server {
             InputStreamReader isr = new InputStreamReader(currentSocket.getInputStream());
             BufferedReader br = new BufferedReader(isr);
             PrintStream ps = new PrintStream(currentSocket.getOutputStream());
-            
+            //Read first input to determinat type
             String type = br.readLine();
 
             if (type.equals("turnstil")) {
